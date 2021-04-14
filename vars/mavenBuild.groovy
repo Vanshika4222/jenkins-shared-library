@@ -1,7 +1,6 @@
 def call(String repoUrl) {
       echo "Hello Vanshika welcome to MavenBuild shared library"
    
-      node {
        stages {
            stage("Tools initialization") {
 				steps {
@@ -30,5 +29,5 @@ def call(String repoUrl) {
                    sh "mvn package -DskipTests"
                }
            }
-       }}
+       }
    }
