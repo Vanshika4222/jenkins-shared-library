@@ -1,7 +1,7 @@
 def call(String repoUrl) {
       echo "Hello Vanshika welcome to MavenBuild shared library"
    
-       stages {
+       node {
            stage("Tools initialization") {
 				steps {
                    sh "mvn --version"
